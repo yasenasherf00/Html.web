@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+* {
+    font-family: "Bruno Ace", serif;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 100vh;
+    background-image: url('./image/logo.jpg');
+    background: center, content '\f00c';
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.conteiner {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.primary-text {
+    color: #e4b95b;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn-primary {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1) perspective(2500px) rotate(5deg);
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar img {
+    width: 80px;
+    margin-left: 100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    margin-right: 100px;
+}
+
+.navbar ul li a {
+    padding: 15px 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.navbar ul li a:hover {
+    border-bottom: 2px solid #e4b95b;
+}
+
+header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+}
+
+header .content h1 {
+    font-size: 40px;
+    color: white;
+}
+
+header .content p {
+    margin: 20px 0 40px;
+    color: white;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+header * {
+    z-index: 10;
+}
+
+#About {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+}
+
+#About .title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#About h2 {
+    font-size: 32px;
+    color: #383848;
+    margin-bottom: 20px;
+}
+
+#About .title p {
+    font-size: 14px;
+    color: #383848;
+    font-weight: 600;
+}
+
+#About .title span {
+    color: #e4b95b;
+}
+
+#About .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#About .about-content img {
+    width: 350px;
+    border-radius: 40px;
+}
+
+#About .about-content p {
+    color: #9e9e9e;
+    margin-right: 7rem;
+    font-weight: 520;
+    line-height: 1.6;
+}
+
+/*offers start*/
+
+#offers {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    background: url('./image/back-ground.jpg')center center/cover fixed;
+}
+
+#offers .title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#offers h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #e4b95b;
+}
+
+#About h2 {
+    color: #383848;
+}
+
+#offers .title p {
+    color: white;
+    font-weight: 500;
+}
+
+#offers .offer-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 30px;
+}
+
+#offers .offer-items img {
+    width: 200px;
+    border-radius: 26px;
+}
+
+#offers .offer-items img:hover {
+    transform: scale(1.1) perspective(2500px) rotate(5deg);
+}
+
+#offers .offer-items h3 {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+#offers .offer-items p {
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+#offers .offer-items span {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+/*offers end*/
+
+/*Communication start*/
+#Contact {
+    padding: 5rem 0;
+    background: hsl(0, 0%, 100%);
+    max-width: 900px;
+}
+
+#Contact .container {
+    max-width: 900px;
+}
+
+#Contact .contact-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#Contact .contact-content .contact-info {
+    width: 50%;
+}
+
+#Contact .contact-content .contact-info div {
+    margin: 30px 0;
+    line-height: 1.7;
+}
+
+#Contact .contact-content .contact-info h3 {
+    font-size: 20px;
+    color: #383848;
+    margin-bottom: 10px;
+}
+
+#Contact .contact-content .contact-info p {
+    color: #9e9e9e;
+}
+
+#Contact .contact-content .contact-info i {
+    color: #e4b95b;
+    margin-right: 5px;
+}
+
+#Contact .contact-content .contact-info i:hover {
+    transform: scale(1.1) perspective(2500px) rotate(5deg);
+}
+
+#Contact .contact-content .contact-info a i {
+    color: white;
+    background-color: #383848;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+form {
+    width: 50%;
+
+}
+
+form input,
+form input textarea {
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color: #e3e2dd;
+}
+
+#Contact .btn {
+    background-color: #e4b95b;
+    color: white;
+
+}
+
+#Contact .btn:hover {
+    background-color: #383848;
+}
+
+/*Communication End*/
